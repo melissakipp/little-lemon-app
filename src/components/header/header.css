@@ -1,0 +1,60 @@
+/* Mobile-First */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* outline: 2px solid red; */
+}
+
+.logo, .burger-menu {
+    margin: 1rem 2rem;
+}
+
+.navbar {
+    display: none;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    padding: 1rem 1rem .25rem 1rem;
+}
+
+.navbar ul li a {
+    font-size: 1.25 rem;
+    font-weight: 900;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Align the list to the right */
+.navbar ul {
+    justify-content: flex-end;
+}
+
+/* Desktop */
+@media screen and (width >= 1000px) {
+    .header-container {
+        justify-content: space-around;
+        align-items: center;
+    }
+    .burger-menu {
+        display: none;
+    }
+
+    .navbar  {
+        display: block;
+    }
+
+    .navbar ul {
+        display: flex;
+    }
+
+    .navbar ul li:hover {
+        border-bottom: 2px solid #000;
+    }
+  }

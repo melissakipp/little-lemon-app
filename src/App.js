@@ -12,9 +12,8 @@ import Testimonials from './components/main/Testimonials';
 function App() {
   return (
     <>
-   
       <Header />
-      <main>
+      <main className="App">
         <Hero />
         <Highlights />
         <Testimonials />
