@@ -14,10 +14,12 @@ function App() {
     <>
       <Header />
       <main className="App">
-        <Hero />
-        <Highlights />
-        <Testimonials />
-        <About />
+        <article>
+          <Hero />
+          <Highlights />
+          <Testimonials />
+          <About />
+        </article>
       </main>
       <Footer />
     </>
