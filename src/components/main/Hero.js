@@ -1,6 +1,5 @@
 import Button from "../ui/buttons/Button";
 // TODO: Future task - include styles at the Button component level
-import "./hero.css";
 
 const Hero = () => {
 
