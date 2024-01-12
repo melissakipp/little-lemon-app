@@ -10,7 +10,7 @@ function Card({ image, title, price, description, delivery }) {
             />
             <div className='card-body'>
                 <div className='card-details'>
-                    <h2 className='card-title'>{title}</h2>
+                    <h3 className='card-title'>{title}</h3>
                     <p className='card-price'>{price}</p>
                 </div>
                 <p className='card-description'>{description}</p>
