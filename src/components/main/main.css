@@ -36,6 +36,22 @@ button {
     margin: auto 0 auto 2rem;
 }
 
+.testimonials {
+    list-style: none;
+}
+
+/********* TESTIMONIALS SECTION *********/
+.testimonials-section {
+    padding: 2rem 2rem;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.testimonials {
+    margin: 1rem 0;
+}
 
 /* Desktop */
 @media screen and (width >= 1000px) {
@@ -53,7 +69,17 @@ button {
     overflow-x: hidden;
   }
 
+  /********* HIGHLIGHTS SECTION *********/
   .card-gallary {
     gap: 2rem;
   }
+
+  /********* TESTIMONIALS SECTION *********/
+  .testimonials {
+    display: flex;
+    flex: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
 }
