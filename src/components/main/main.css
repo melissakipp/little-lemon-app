@@ -42,7 +42,7 @@ button {
 
 /********* TESTIMONIALS SECTION *********/
 .testimonials-section {
-    padding: 2rem 2rem;
+    margin: 6rem 0;
 }
 
 .section-title {
@@ -50,36 +50,57 @@ button {
 }
 
 .testimonials {
-    margin: 1rem 0;
+    margin: 4rem 1rem;
+    padding: 1rem;
+}
+
+.user {
+    margin: 2rem 0;
+}
+
+/********* ABOUT SECTION *********/
+.about-section {
+    padding: 2rem 2rem;
+
 }
 
 /* Desktop */
 @media screen and (width >= 1000px) {
 /********* HERO SECTION *********/
     .hero-section, .card-gallary {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* overflow: hidden; */
-    /* overflow-x: hidden; */
-  }
+        display: flex;
+        flex: row nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
 
-  .hero-section {
-    /* overflow: hidden; */
-    overflow-x: hidden;
-  }
+    .hero-section {
+        overflow-x: hidden;
+     }
 
-  /********* HIGHLIGHTS SECTION *********/
-  .card-gallary {
-    gap: 2rem;
-  }
+    /********* HIGHLIGHTS SECTION *********/
+    .card-gallary {
+        gap: 2rem;
+    }
 
-  /********* TESTIMONIALS SECTION *********/
-  .testimonials {
-    display: flex;
-    flex: row nowrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
+    /********* TESTIMONIALS SECTION *********/
+    .testimonials {
+        display: flex;
+        flex: row nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin: 4rem 2rem;
+    }
+
+    /********* ABOUT SECTION *********/
+    .about-section {
+        display: flex;
+        flex: row nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin: 6rem 0;
+    }
 }
