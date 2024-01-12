@@ -1,4 +1,4 @@
-import Card from '../ui/cards/Card';
+import Card from '../components/ui/cards/Card';
 
 export const Highlights = () => {
     return (

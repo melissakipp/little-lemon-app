@@ -1,12 +1,12 @@
 import './App.css';
-import './components/main/main.css';
+import './main/main.css';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
-import About from './components/main/About';
-import Hero from './components/main/Hero';
-import { Highlights } from './components/main/Highlights';
+import About from './main/About';
+import Hero from './main/Hero';
+import { Highlights } from './main/Highlights';
 // import Highlights from './components/main/Highlights';
-import Testimonials from './components/main/Testimonials';
+import Testimonials from './main/Testimonials';
 
 // Note: these selections are already have a layout of block, it is
 // the nested components that need to have viewport changes
