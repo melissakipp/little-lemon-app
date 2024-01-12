@@ -1,3 +1,4 @@
+/********* HERO SECTION *********/
 .hero-section {
     padding: 1rem;
     background-color: #495E57;
@@ -30,11 +31,29 @@ button {
     margin: 2rem;
 }
 
+/********* HIGHLIGHTS SECTION *********/
+.highlights-section {
+    margin: auto 0 auto 2rem;
+}
+
+
 /* Desktop */
 @media screen and (width >= 1000px) {
-  .hero-section {
+/********* HERO SECTION *********/
+    .hero-section, .card-gallary {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* overflow: hidden; */
+    /* overflow-x: hidden; */
+  }
+
+  .hero-section {
+    /* overflow: hidden; */
+    overflow-x: hidden;
+  }
+
+  .card-gallary {
+    gap: 2rem;
   }
 }
