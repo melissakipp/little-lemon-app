@@ -1,6 +1,6 @@
 import Card from '../components/ui/cards/Card';
 
-export const Highlights = () => {
+export default function Highlights() {
     return (
         <section className='highlights-section'>
             <div className='announcement'>
