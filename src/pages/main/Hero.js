@@ -1,4 +1,4 @@
-import Button from "../components/ui/buttons/Button";
+import Button from "../../components/ui/button/Button";
 // TODO: Future task - include styles at the Button component level
 
 const Hero = () => {

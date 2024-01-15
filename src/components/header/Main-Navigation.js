@@ -1,4 +1,4 @@
-export const MainNavigation = () => {
+export default function MainNavigation() {
     return (
         <nav className="navbar">
             <ul>

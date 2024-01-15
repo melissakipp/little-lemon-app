@@ -1,4 +1,4 @@
-import Card from '../components/ui/cards/Card';
+import Card from '../../components/ui/card/Card';
 
 export default function Highlights() {
     return (
