@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function ReservationForm() {
+export default function ReservationForm( { availableTimes }) {
 
     // Initialize state variables to store form input values
     const [date, setDate] = useState("");
@@ -9,14 +9,14 @@ export default function ReservationForm() {
     const [occasion, setOccasion] = useState("Birthday");
 
     // Initialize state variable for available booking times
-    const [availableTimes] = useState([
-    "17:00",
-    "18:00",
-    "19:00",
-    "20:00",
-    "21:00",
-    "22:00",
-  ]);
+//     const [availableTimes] = useState([
+//     "17:00",
+//     "18:00",
+//     "19:00",
+//     "20:00",
+//     "21:00",
+//     "22:00",
+//   ]);
 
     // Handle form submission
     const handleSubmit = (e) => {
@@ -62,9 +62,9 @@ export default function ReservationForm() {
                         onChange={e => setTime(e.target.value)}
                     >
                     <option value="">Select a time</option>
-                        {availableTimes.map((availableTime) => (
-                            <option key={availableTime} value={availableTime}>
-                            {availableTime}
+                        {availableTimes.map((time) => ( // Loop through availableTimes array
+                            <option key={time} value={time}>
+                            {time}
                             </option>
                         ))}
                     </select>
