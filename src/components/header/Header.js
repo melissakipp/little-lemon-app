@@ -1,16 +1,14 @@
 import MainNavigation from "./Main-Navigation";
 import "./header.css";
 
-import { Link } from 'react-router-dom';
-
-const Header = () => {
+function Header() {
     return (
         <header className="header-container">
             <div>
-                <Link to='/' title=''>
+                {/* <Link to='/'> */}
                     <h1 aria-hidden='true' className="sr-only">Little Lemon Homepage</h1>
                     <img className="logo" src="/images/Logo.svg" alt="Little Lemon logo" />
-                </Link>
+                {/* </Link> */}
             </div>
             <MainNavigation />
             <div className="burger-menu">
