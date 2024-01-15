@@ -8,9 +8,9 @@ import About from './pages/about/About';
 import Main from './pages/main/Main';
 import Menu from './pages/menu/Menu';
 import Reservation from './pages/reservation/Reservation';
-import OrderOnline from './pages/orderOnline/OrderOnline';
+import OrderOnline from './pages/order-online/OrderOnline';
 import Login from './pages/login/Login';
-import NotFound from './pages/notFound/NotFound';
+import NotFound from './pages/not-found/NotFound';
 
 
 // Note: these selections are already have a layout of block, it is
