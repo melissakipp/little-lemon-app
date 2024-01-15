@@ -6,7 +6,7 @@ import ReservationForm from './ReservationForm';
 
 // Define a reducer function to update the availableTimes
 function availableTimesReducer(state, action) {
-    // You can implement logic here to update availableTimes based on the selected date
+    // Implement logic here to update availableTimes based on the selected date
     // For now, return the same available times regardless of the date
     return [
       "17:00",
@@ -41,7 +41,7 @@ function Reservation() {
 
         // Define the updateTimes function to update the availableTimes state based on the selected date
         function updateTimes(selectedDate) {
-        // You can implement logic here to update availableTimes based on the selected date
+        // Implement logic here to update availableTimes based on the selected date
         // For now, dispatch the same available times regardless of the date
         dispatch([]);
         }

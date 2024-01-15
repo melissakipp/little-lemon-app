@@ -40,13 +40,13 @@ export default function ReservationForm( { availableTimes }) {
     }
 
     return (
-        <form 
+        <form
             className="reservation-form"
             onSubmit={handleSubmit}
         >
             <div className="space">
                 <label htmlFor="res-date">Choose date</label>
-                <input 
+                <input
                     type="date"
                     id="res-date"
                     value={date}
@@ -55,14 +55,14 @@ export default function ReservationForm( { availableTimes }) {
             </div>
             <div className="space">
                 <label htmlFor="res-time">Choose time
-                    <select 
-                        className="select" 
+                    <select
+                        className="select"
                         id="res-time"
                         value={time}
                         onChange={e => setTime(e.target.value)}
                     >
                     <option value="">Select a time</option>
-                        {availableTimes.map((time) => ( // Loop through availableTimes array
+                        {availableTimes.map((time) => (
                             <option key={time} value={time}>
                             {time}
                             </option>
@@ -72,20 +72,20 @@ export default function ReservationForm( { availableTimes }) {
             </div>
             <div className="space">
                 <label htmlFor="guests">Number of guests</label>
-                <input 
-                    className="number" 
-                    type="number" 
-                    placeholder="1" 
-                    min="1" max="10" 
-                    id="guests" 
+                <input
+                    className="number"
+                    type="number"
+                    placeholder="1"
+                    min="1" max="10"
+                    id="guests"
                     value={guests}
                     onChange={(e) => setGuests(e.target.value)}
                 />
             </div>
             <div className="space">
                 <label htmlFor="occasion">Occasion</label>
-                <select 
-                    className="select" 
+                <select
+                    className="select"
                     id="occasion"
                     value={occasion}
                     onChange={e => setOccasion(e.target.value)}
@@ -94,10 +94,10 @@ export default function ReservationForm( { availableTimes }) {
                     <option>Anniversary</option>
                 </select>
             </div>
-            <input 
-                className='btn' 
-                type="submit" 
-                value="Make Your reservation" 
+            <input
+                className='btn'
+                type="submit"
+                value="Make Your reservation"
             />
         </form>
     );
