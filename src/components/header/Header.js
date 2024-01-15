@@ -5,8 +5,10 @@ const Header = () => {
     return (
         <header className="header-container">
             <div>
-                <h1 className="sr-only">Little Lemon Homepage</h1>
-                <img className="logo" src="/images/Logo.svg" alt="Little Lemon logo" />
+                <a href='/' title=''>
+                    <h1 aria-hidden='true' className="sr-only">Little Lemon Homepage</h1>
+                    <img className="logo" src="/images/Logo.svg" alt="Little Lemon logo" />
+                </a>
             </div>
             <MainNavigation />
             <div className="burger-menu">
