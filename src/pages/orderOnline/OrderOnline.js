@@ -1,8 +1,8 @@
 function OrderOnline() {
     return (
-        <div>
+        <main className='App'>
             <h1>Order Online</h1>
-        </div>
+        </main>
     );
 }
 

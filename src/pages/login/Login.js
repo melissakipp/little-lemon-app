@@ -1,8 +1,8 @@
 function Login() {
     return (
-        <div>
+        <main className='App'>
             <h1>Login</h1>
-        </div>
+        </main>
     );
 }
 

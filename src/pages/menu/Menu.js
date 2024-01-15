@@ -1,8 +1,8 @@
 function Menu() {
     return (
-        <div>
+        <main className='App'>
             <h1>Menu</h1>
-        </div>
+        </main>
     );
 }
 
