@@ -8,27 +8,16 @@ export default function ReservationForm( { availableTimes }) {
     const [guests, setGuests] = useState(1);
     const [occasion, setOccasion] = useState("Birthday");
 
-    // Initialize state variable for available booking times
-//     const [availableTimes] = useState([
-//     "17:00",
-//     "18:00",
-//     "19:00",
-//     "20:00",
-//     "21:00",
-//     "22:00",
-//   ]);
-
     // Handle form submission
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevent the default form submission behavior
-
         // You can now access the form input values (date, time, guests, occasion)
         console.log("Date:", date);
         console.log("Time:", time);
         console.log("Guests:", guests);
         console.log("Occasion:", occasion);
 
-    // You can perform further actions, such as sending data to a server, here.
+        // You can perform further actions, such as sending data to a server, here.
         ClearForm();
     };
 

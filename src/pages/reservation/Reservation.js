@@ -31,12 +31,39 @@ export function initializeTimes() {
     ];
   }
 
-// Define the updateTimes function to update the availableTimes state based on the selected date
-function updateTimes(dispatch, selectedDate) {
-// Implement logic here to update availableTimes based on the selected date
-// For now, dispatch the same available times regardless of the date
-dispatch([]);
-}
+    // Define the updateTimes function to update the availableTimes state based on the selected date
+    function updateTimes(dispatch, selectedDate) {
+    // Implement logic here to update availableTimes based on the selected date
+    console.log("Selected Date: ", selectedDate);
+    console.log("Update Times: ", dispatch);
+    // For now, dispatch the same available times regardless of the date
+    dispatch([]);
+    }
+
+// function updateTimes(dispatch, selectedDate) {
+//     const timeSlotsByDate = {
+//       '2024-12-31': [
+//         '17:00',
+//         '18:00',
+//         '19:00',
+//       ],
+//       '2024-12-30': [
+//         '16:00',
+//         '17:00',
+//         '18:00',
+//       ],
+//       // Add more date-time associations as needed
+//     };
+//     // Check if the selectedDate exists in the mapping
+//     if (selectedDate in timeSlotsByDate) {
+//       // If it does, dispatch the associated time slots
+//       const newAvailableTimes = timeSlotsByDate[selectedDate];
+//       dispatch(newAvailableTimes);
+//     } else {
+//       // If not, dispatch an empty array or some default value
+//       dispatch([]);
+//     }
+//   }
 
 function Reservation() {
 
