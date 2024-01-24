@@ -1,92 +1,139 @@
-import { useState } from "react";
+import { useState } from 'react';
+import FormField from '../../components/ui/formField/FormField';
 
-export default function ReservationForm( { availableTimes }) {
+export default function ReservationForm( {
+    availableTimes,
+    submitData
+}) {
 
-    // Initialize state variables to store form input values
-    const [date, setDate] = useState("");
-    const [time, setTime] = useState("17:00");
-    const [guests, setGuests] = useState(1);
-    const [occasion, setOccasion] = useState("Birthday");
+    const minimumDate = new Date().toISOString().split('T')[0];
+    const defaultDate = availableTimes[0];
+    const minimumGuests = 1;
+    const maximumGuests = 10;
 
-    // Handle form submission
-    const handleSubmit = (e) => {
-        e.preventDefault(); // Prevent the default form submission behavior
-        // You can now access the form input values (date, time, guests, occasion)
-        console.log("Date:", date);
-        console.log("Time:", time);
-        console.log("Guests:", guests);
-        console.log("Occasion:", occasion);
+    const invalidDateErrorMessage = 'Please choose a valid date';
+    const invalidTimeErrorMessage = 'Please choose a valid time';
+    const invalidOccasionErrorMessage = 'Please choose a valid occasion';
+    const invalidNumberOfGuestsErrorMessage = `Please enter a number between ${minimumGuests} and ${maximumGuests}`;
 
-        // You can perform further actions, such as sending data to a server, here.
-        ClearForm();
+    const guestHint = `Minimum of ${minimumGuests} and max limit ${maximumGuests}`;
+
+    const [date, setDate] = useState(minimumDate);
+    const [time, setTime] = useState(defaultDate);
+    const [guests, setGuests] = useState(minimumGuests);
+    const [occasion, setOccasion] = useState('Birthday');
+
+    const isDateValid = () => date !== '';
+    const isTimeValid = () => time !== '';
+    const isGuestsValid = () => guests !== '';
+    const isOccasionValid = () => occasion !== '';
+    const hasHint = () => guests < minimumGuests || guests > maximumGuests;
+
+    function handleTimeChange(e) {
+        setTime(e.target.value);
     };
 
+    function handleSumbit(e) {
+        e.preventDefault();
+        // console.log('Date:', date);
+        // console.log('Time:', time);
+        // console.log('Guests:', guests);
+        // console.log('Occasion:', occasion);
+        submitData({ date, time, guests, occasion });
+        ClearForm();
+    }
+
     const ClearForm = () => {
-        setDate("");
-        setTime("17:00");
+        setDate(minimumDate);
+        setTime('17:00');
         setGuests(1);
-        setOccasion("Birthday");
+        setOccasion('Birthday');
     }
 
     return (
         <form
-            className="reservation-form"
-            onSubmit={handleSubmit}
+            className='reservation-form'
+            onSubmit={handleSumbit}
         >
-            <div className="space">
-                <label htmlFor="res-date">Choose date</label>
+            <FormField
+                label='Date'
+                htmlFor='reservation-date'
+                hasError={!isDateValid()}
+                errorMessage={invalidDateErrorMessage}
+            >
                 <input
-                    type="date"
-                    id="res-date"
-                    value={date}
-                    onChange={e => setDate(e.target.value)}
+                type='date'
+                id='reservation-date'
+                name='reservation-date'
+                min={minimumDate}
+                value={date}
+                required={true}
+                onChange={handleTimeChange}
                 />
-            </div>
-            <div className="space">
-                <label htmlFor="res-time">Choose time
-                    <select
-                        className="select"
-                        id="res-time"
-                        value={time}
-                        onChange={e => setTime(e.target.value)}
-                    >
-                    <option value="">Select a time</option>
-                        {availableTimes.map((time) => (
-                            <option key={time} value={time}>
-                            {time}
-                            </option>
-                        ))}
-                    </select>
-                </label>
-            </div>
-            <div className="space">
-                <label htmlFor="guests">Number of guests</label>
+            </FormField>
+            <FormField
+                label='Time'
+                htmlFor='reservation-time'
+                hasError={!isTimeValid()}
+                errorMessage={invalidTimeErrorMessage}
+            >
+                <select
+                    id='reservation-time'
+                    className='reservation-time'
+                    name='reservation-time'
+                    value={time}
+                    required={true}
+                    onChange={handleTimeChange}
+                >
+                    {availableTimes.map((time) => (
+                        <option key={time} value={time}>
+                        {time}
+                        </option>
+                    ))}
+                </select>
+            </FormField>
+            <FormField
+                label='Guests'
+                htmlFor='guests'
+                hasError={!isGuestsValid()}
+                errorMessage={invalidNumberOfGuestsErrorMessage}
+                hasHint={!hasHint()}
+                hintMessage={guestHint}
+            >
                 <input
-                    className="number"
-                    type="number"
-                    placeholder="1"
-                    min="1" max="10"
-                    id="guests"
+                    type='number'
+                    id='guests'
+                    className='guests'
+                    name='guests'
+                    min={minimumGuests}
+                    max={maximumGuests}
                     value={guests}
+                    required={true}
                     onChange={(e) => setGuests(e.target.value)}
                 />
-            </div>
-            <div className="space">
-                <label htmlFor="occasion">Occasion</label>
+            </FormField>
+            <FormField
+                label='Occasion'
+                htmlFor='occasion'
+                hasError={!isOccasionValid()}
+                errorMessage={invalidOccasionErrorMessage}
+            >
                 <select
-                    className="select"
-                    id="occasion"
+                    id='occasion'
+                    className='occasion'
+                    name='occasion'
                     value={occasion}
-                    onChange={e => setOccasion(e.target.value)}
+                    required={true}
+                    onChange={(e) => setOccasion(e.target.value)}
                 >
                     <option>Birthday</option>
                     <option>Anniversary</option>
                 </select>
-            </div>
+            </FormField>
             <input
                 className='btn'
-                type="submit"
-                value="Make Your reservation"
+                type='submit'
+                value='Make Your reservation'
             />
         </form>
     );
