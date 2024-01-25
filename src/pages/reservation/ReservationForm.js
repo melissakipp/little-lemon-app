@@ -29,10 +29,6 @@ export default function ReservationForm( {
     const isOccasionValid = () => occasion !== '';
     const hasHint = () => guests < minimumGuests || guests > maximumGuests;
 
-    function handleTimeChange(e) {
-        setTime(e.target.value);
-    };
-
     function handleSumbit(e) {
         e.preventDefault();
         // console.log('Date:', date);
@@ -68,7 +64,7 @@ export default function ReservationForm( {
                 min={minimumDate}
                 value={date}
                 required={true}
-                onChange={handleTimeChange}
+                onChange={e => setDate(e.target.value)}
                 />
             </FormField>
             <FormField
@@ -83,7 +79,7 @@ export default function ReservationForm( {
                     name='reservation-time'
                     value={time}
                     required={true}
-                    onChange={handleTimeChange}
+                    onChange={e => setTime(e.target.value)}
                 >
                     {availableTimes.map((time) => (
                         <option key={time} value={time}>
