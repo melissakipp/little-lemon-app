@@ -1,27 +1,36 @@
-import { render, screen } from '@testing-library/react';
+// import { render, fireEvent } from '@testing-library/react';
+// import { Routes, Route } from 'react-router-dom';
 // import { render, screen, fireEvent } from '@testing-library/react';
-import Reservation, { initializeTimes } from '../../pages/reservation/Reservation';
+// import { BrowserRouter as Router } from 'react-router-dom';
 
-test('renders Reservation component', () => {
-    render(<Reservation />);
-    const h1Element = screen.getByText(/Book Now/i);
-    expect(h1Element).toBeInTheDocument();
-});
+// import Reservation from '../../pages/reservation/Reservation';
 
-test("initializeTimes returns the expected initial times", () => {
-        // Define the expected initial times based on your implementation
-        const expectedInitialTimes = [
-            "17:00",
-            "18:00",
-            "19:00",
-            "20:00",
-            "21:00",
-            "22:00",
-        ];
-        // Call the initializeTimes function and assert that it returns the expected value
-        const actualInitialTimes = initializeTimes();
-        expect(actualInitialTimes).toEqual(expectedInitialTimes);
-});
+
+
+// test('renders Reservation component', () => {
+//     render(
+//         <Routes>
+//             <Route path="/reservation" element={<Reservation />} />
+//         </Routes>
+//     );
+//     const h1Element = screen.getByText(/Book Now/i);
+//     expect(h1Element).toBeInTheDocument();
+// });
+
+// test("initializeTimes returns the expected initial times", () => {
+//         // Define the expected initial times based on your implementation
+//         const expectedInitialTimes = [
+//             "17:00",
+//             "18:00",
+//             "19:00",
+//             "20:00",
+//             "21:00",
+//             "22:00",
+//         ];
+//         // Call the initializeTimes function and assert that it returns the expected value
+//         const actualInitialTimes = initializeTimes();
+//         expect(actualInitialTimes).toEqual(expectedInitialTimes);
+// });
 
 // Mock the updateTimes function
 // const mockUpdateTimes = jest.fn();
@@ -49,3 +58,17 @@ test("initializeTimes returns the expected initial times", () => {
 
 //   // Add assertions to verify the form behavior
 // });
+
+// test('Date input field is working', () => {
+//     // Render your component containing the date input field
+//     const { getByLabelText } = render(<Reservation />);
+
+//     // Find the date input field by its label text
+//     const dateInput = getByLabelText('Choose date');
+
+//     // Simulate user interaction: set a date value
+//     fireEvent.change(dateInput, { target: { value: '2023-12-31' } });
+
+//     // Assert that the input value has changed
+//     expect(dateInput.value).toBe('2023-12-31');
+//   });

@@ -52,7 +52,7 @@ export default function ReservationForm( {
             onSubmit={handleSumbit}
         >
             <FormField
-                label='Date'
+                label='Choose date'
                 htmlFor='reservation-date'
                 hasError={!isDateValid()}
                 errorMessage={invalidDateErrorMessage}
