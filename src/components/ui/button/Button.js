@@ -1,8 +1,8 @@
-import "./button.css";
+import './button.css';
 
-const Button = ({ text, onClick }) => {
+const Button = ({ text, onClick, color }) => {
     return (
-        <button onClick={onClick}>
+        <button className={color} onClick={onClick}>
             {text}
         </button>
     );
