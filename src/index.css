@@ -3,14 +3,13 @@
 :root {
   --primaryColor: #495E57;
   --secondaryColor: #F4CE14;
-
-
   }
-  .ctaButtonColor {
-    background-color: var(--secondaryColor);
-    color: #333;
-    transition: all 0.2s ease-in-out;
-  }
+
+.ctaButtonColor {
+  background-color: var(--secondaryColor);
+  color: #333;
+  transition: all 0.2s ease-in-out;
+}
 
 html {
   box-sizing: border-box;
