@@ -1,9 +1,9 @@
-import './main.css';
+import './home.css';
 
-import About from '../../components/main/About';
-import Hero from '../../components/main/Hero';
-import Highlights from '../../components/main/Highlights';
-import Testimonials from '../../components/main/Testimonials';
+import About from './About';
+import Hero from './Hero';
+import Highlights from './Highlights';
+import Testimonials from './Testimonials';
 
 function Main() {
     return (

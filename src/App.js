@@ -5,7 +5,7 @@ import Header from './components/header/Header';
 
 import { Routes, Route } from 'react-router-dom';
 import About from './pages/about/About';
-import Main from './pages/main/Main';
+import Home from './pages/homepage/Home';
 import Menu from './pages/menu/Menu';
 import Reservation from './pages/reservation/Reservation';
 import ConfirmReservation from './pages/reservation/ConfirmReservation';
@@ -23,7 +23,7 @@ function App({ content }) {
       <Header />
       {content}
       <Routes>
-        <Route path="/" element={<Main /> } /> {/* 👈 Renders at /app/ */}
+        <Route path="/" element={<Home /> } /> {/* 👈 Renders at /app/ */}
         <Route path="/about" element={<About />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/reservation" element={<Reservation />} />
