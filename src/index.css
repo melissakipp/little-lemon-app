@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;1,400&family=Markazi+Text:wght@700&display=swap');
 
+:root {
+  --primaryColor: #495E57;
+  --secondaryColor: #F4CE14;
+
+
+  }
+  .ctaButtonColor {
+    background-color: var(--secondaryColor);
+    color: #333;
+    transition: all 0.2s ease-in-out;
+  }
+
 html {
   box-sizing: border-box;
   font-size: 16px;
