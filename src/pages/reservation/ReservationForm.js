@@ -130,6 +130,7 @@ export default function ReservationForm( {
                 className='btn'
                 type='submit'
                 value='Make Your reservation'
+                aria-label='On click make your reservation'
             />
         </form>
     );
