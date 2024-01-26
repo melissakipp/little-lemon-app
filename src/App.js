@@ -13,17 +13,13 @@ import OrderOnline from './pages/order-online/OrderOnline';
 import Login from './pages/login/Login';
 import NotFound from './pages/not-found/NotFound';
 
-
-// Note: these selections are already have a layout of block, it is
-// the nested components that need to have viewport changes
-
 function App({ content }) {
   return (
     <>
       <Header />
       {content}
       <Routes>
-        <Route path="/" element={<Home /> } /> {/* 👈 Renders at /app/ */}
+        <Route path="/" element={<Home /> } />
         <Route path="/about" element={<About />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/reservation" element={<Reservation />} />
