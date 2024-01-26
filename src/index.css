@@ -11,6 +11,27 @@
   transition: all 0.2s ease-in-out;
 }
 
+.ctaButtonColor:hover {
+  background-color: #333;
+  color: var(--secondaryColor);
+  margin: 2rem auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.orderButtonColor {
+  background-color: var(--primaryColor);
+  color: #fff;
+  margin: 1.75rem auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.orderButtonColor:hover {
+  background-color: #fff;
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
+  transition: all 0.2s ease-in-out;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
