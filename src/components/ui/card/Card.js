@@ -2,7 +2,7 @@ import './card.css';
 
 function Card({ image, title, price, description, delivery, altText }) {
     return (
-        <div className='card'>
+        <li className='card'>
             <img
                 className='card-img'
                 src={image}
@@ -16,7 +16,7 @@ function Card({ image, title, price, description, delivery, altText }) {
                 <p className='card-description'>{description}</p>
                 <p className='card-delivery'>{delivery}</p>
             </div>
-        </div>
+        </li>
     );
 }
 

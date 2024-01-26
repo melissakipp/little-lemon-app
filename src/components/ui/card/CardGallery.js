@@ -34,7 +34,7 @@ const CardGallary = () => {
     ];
 
     return (
-        <div className="card-gallery">
+        <ul className="card-gallery">
             {cardData.map((card, index) => (
                 <Card
                     key={index}
@@ -45,7 +45,7 @@ const CardGallary = () => {
                     delivery={card.delivery}
                 />
             ))}
-        </div>
+        </ul>
     );
 };
 
