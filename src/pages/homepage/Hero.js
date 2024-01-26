@@ -1,3 +1,4 @@
+import HeroImage from '../../assets/restaurant-food.jpg';
 import Button from '../../components/ui/button/Button';
 
 const Hero = () => {
@@ -15,7 +16,7 @@ const Hero = () => {
                 <Button color='ctaButtonColor' text='Reservations' onClick={handleClick} />
             </div>
             <div className='col-2'>
-                <img className='hero-image' src='/images/restauranfood.jpg' alt='restaurant food' />
+                <img className='hero-image' src={HeroImage} alt='restaurant food' />
             </div>
         </section>
     );
