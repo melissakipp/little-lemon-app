@@ -1,0 +1,20 @@
+/* FILEPATH: /home/melissa/NodeProjects/little-lemon-app/src/components/ui/card/cardGallary.css */
+
+/* Desktop */
+@media screen and (width >= 1000px) {
+    .card-gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+/* Styles for mobile */
+@media (max-width: 768px) {
+    .card-gallery {
+        flex-direction: column;
+        outline: 2px solid blue;
+    }
+}

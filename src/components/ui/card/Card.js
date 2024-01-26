@@ -1,12 +1,12 @@
 import './card.css';
 
-function Card({ image, title, price, description, delivery }) {
+function Card({ image, title, price, description, delivery, altText }) {
     return (
         <div className='card'>
             <img
                 className='card-img'
                 src={image}
-                alt='Food'
+                alt={altText}
             />
             <div className='card-body'>
                 <div className='card-details'>
