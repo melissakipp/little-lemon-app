@@ -1,10 +1,16 @@
 /********* HERO SECTION *********/
 .hero-section {
-    padding: 1rem;
+    padding: 2rem;
     background-color: #495E57;
     color: #fff;
     width: 100vw;
 }
+
+.col-1, .col-2 {
+    margin: auto 2rem;
+    padding: .75rem;
+}
+    
 
 .hero-title {
     color: #F4CE14;
@@ -19,10 +25,6 @@
     max-width: 45ch;
 }
 
-button {
-    background-color: #F4CE14;
-}
-
 .hero-image {
     border-radius: 8px;
     height: auto;
@@ -34,6 +36,7 @@ button {
 /********* HIGHLIGHTS SECTION *********/
 .highlights-section {
     margin: auto 0 auto 2rem;
+    padding: 2rem;
 }
 
 .testimonials {
@@ -42,9 +45,9 @@ button {
 
 /********* TESTIMONIALS SECTION *********/
 .testimonials-section {
-    margin: 6rem 0;
+    margin: 6rem ;
 }
-
+rem
 .section-title {
     text-align: center;
 }
@@ -75,6 +78,10 @@ button {
         gap: 2rem;
     }
 
+    .hero-title {
+        margin: auto;    
+    }
+
     .hero-section {
         overflow-x: hidden;
      }
@@ -82,6 +89,15 @@ button {
     /********* HIGHLIGHTS SECTION *********/
     .card-gallary {
         gap: 2rem;
+    }
+
+    .announcement{
+        display: flex;
+        flex: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    
     }
 
     /********* TESTIMONIALS SECTION *********/
