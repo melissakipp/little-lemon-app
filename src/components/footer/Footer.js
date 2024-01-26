@@ -1,3 +1,5 @@
+import { FaFacebookSquare, FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
+
 import './footer.css';
 
 const Footer = () => {
@@ -29,9 +31,24 @@ const Footer = () => {
                 <section>
                     <h3 className='footer-titles'>Social Media</h3>
                     <ul>
-                        <li><a href='https://www.facebook.com'>Facebook</a></li>
-                        <li><a href='https://www.twitter.com'>Twitter</a></li>
-                        <li><a href='https://www.instagram'>Instagram</a></li>
+                        <li>
+                            <a href='https://www.facebook.com'>
+                                <FaFacebookSquare aria-hidden='true' className='icons' />
+                                <span className='sr-only'>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='https://www.twitter.com'>
+                                <FaTwitterSquare aria-hidden='true' className='icons' />
+                                <span className='sr-only'>Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='https://www.instagram'>
+                                <FaInstagramSquare aria-hidden='true' className='icons' />
+                                <span className='sr-only'>Instagram</span>
+                            </a>
+                        </li>
                     </ul>
                 </section>
             </article>
