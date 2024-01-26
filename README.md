@@ -48,6 +48,8 @@ One of the key hurdles was creating reusable components in Figma. Developing com
 
 Another significant aspect of the project was the research I conducted on the restaurant industry. This was a part of the process I thoroughly enjoyed. Delving into the world of restaurant branding, customer experience, and the latest trends in restaurant web design was fascinating. It gave me insights into how restaurants present themselves online and how they connect with their customers. It helped me understand the kind of experience we wanted to offer the users and how the design could facilitate that experience.
 
+[Fimga File](https://www.figma.com/file/epT4CYntLaYiEy3cuXwhJZ/LL-wireframe?type=design&node-id=0%3A1&mode=design&t=cgsFYut4BuMfVWzG-1) 😊
+
 ![Figma Home page](20240126_homepage-desktop_little-lemon.png?raw=true)
 
 ![Figma Components](20240126_figma-components_little-lemon.png?raw=true)
