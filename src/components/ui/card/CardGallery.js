@@ -5,7 +5,7 @@ import CardOne from '../../../assets/restaurant-chef-B.jpg';
 import CardTwo from '../../../assets/lemon-dessert.jpg';
 import CardThree from '../../../assets/greek-salad.jpg';
 
-const CardGallary = () => {
+export default function CardGallary() {
     const cardData = [
         {
             title: `Meat Loaf Gyros`,
@@ -13,7 +13,7 @@ const CardGallary = () => {
             image: CardOne,
             price: `$18.00`,
             delivery: `Delivery Available`,
-            altText: `Meat Loaf Gyros`
+            altText: `Meat Loaf Gyros`,
          },
         {
             title: `Lemon Dessert`,
@@ -21,7 +21,7 @@ const CardGallary = () => {
             image: CardTwo,
             price: `$18.00`,
             delivery: `Delivery Available`,
-            altText: `Meat Loaf Gyros`
+            altText: `Meat Loaf Gyros`,
          },
         {
             title: `Mediterranean Pork and Orzo Salad`,
@@ -29,7 +29,7 @@ const CardGallary = () => {
             image: CardThree,
             price: `$18.00`,
             delivery: `Delivery Available`,
-            altText: `Meat Loaf Gyros`
+            altText: `Meat Loaf Gyros`,
          },
     ];
 
@@ -43,11 +43,9 @@ const CardGallary = () => {
                     image={card.image}
                     price={card.price}
                     delivery={card.delivery}
+                    altText={card.altText}
                 />
             ))}
         </ul>
     );
 };
-
-export default CardGallary;
-

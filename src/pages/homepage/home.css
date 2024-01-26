@@ -10,7 +10,6 @@
     margin: auto 2rem;
     padding: .75rem;
 }
-    
 
 .hero-title {
     color: #F4CE14;
@@ -47,7 +46,7 @@
 .testimonials-section {
     margin: 6rem ;
 }
-rem
+
 .section-title {
     text-align: center;
 }
@@ -61,10 +60,27 @@ rem
     margin: 2rem 0;
 }
 
+.user-review {
+    max-width: 20ch;
+}
+
 /********* ABOUT SECTION *********/
 .about-section {
     padding: 2rem 2rem;
 
+}
+
+/* Tablet */
+@media screen and (width >= 800px) {
+        /********* TESTIMONIALS SECTION *********/
+        .testimonials {
+            display: flex;
+            flex: row wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: auto 2rem;
+            width: 100%;
+        }
 }
 
 /* Desktop */
@@ -79,7 +95,7 @@ rem
     }
 
     .hero-title {
-        margin: auto;    
+        margin: auto;
     }
 
     .hero-section {
@@ -97,7 +113,6 @@ rem
         justify-content: space-between;
         align-items: center;
         width: 100%;
-    
     }
 
     /********* TESTIMONIALS SECTION *********/
@@ -105,18 +120,19 @@ rem
         display: flex;
         flex: row nowrap;
         align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        margin: 4rem 2rem;
+        justify-content: space-evenly;
+        margin: auto 2rem;
+        width: 100%;
+    }
+
+    .user {
+        max-width: 25ch;
+        width: fit-content;
     }
 
     /********* ABOUT SECTION *********/
     .about-section {
         display: flex;
         flex: row nowrap;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        margin: 6rem 0;
     }
 }

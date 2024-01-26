@@ -1,8 +1,19 @@
 import './card.css';
 
-function Card({ image, title, price, description, delivery, altText }) {
+function Card({
+    image,
+    title,
+    price,
+    description,
+    delivery,
+    altText,
+}) {
+
+
     return (
-        <li className='card'>
+        <li
+            className='card'
+            >
             <img
                 className='card-img'
                 src={image}
