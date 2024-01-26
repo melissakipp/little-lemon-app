@@ -1,13 +1,22 @@
 /********* HERO SECTION *********/
 .hero-section {
     padding: 2rem;
-    background-color: #495E57;
+    background-color: var(--primaryColor);
     color: #fff;
-    width: 100vw;
+    /* position: relative; */
+    z-index: 1;
+    height: 400px;
+}
+
+.col-2 img {
+    /* margin-top: .5rem; */
+    position: absolute;
+    z-index: 2;
+    top : 180px;
 }
 
 .hero-title {
-    color: #F4CE14;
+    color: var(--secondaryColor);
 }
 
 .hero-location {
@@ -29,7 +38,7 @@
 
 /********* HIGHLIGHTS SECTION *********/
 .highlights-section {
-    margin: auto 0 auto 2rem;
+    margin: 6rem 0 2rem auto;
     padding: 2rem;
 }
 
@@ -91,15 +100,15 @@
 
 /* Tablet */
 @media screen and (width >= 800px) {
-        /********* TESTIMONIALS SECTION *********/
-        .testimonials {
-            display: flex;
-            flex: row wrap;
-            align-items: center;
-            justify-content: space-evenly;
-            margin: auto 2rem;
-            width: 100%;
-        }
+    /********* TESTIMONIALS SECTION *********/
+    .testimonials {
+        display: flex;
+        flex: row wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: auto 2rem;
+        width: 100%;
+    }
 }
 
 /* Desktop */
