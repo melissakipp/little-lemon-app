@@ -4,16 +4,16 @@
     background-color: var(--primaryColor);
     color: #fff;
     /* position: relative; */
-    z-index: 1;
-    height: 400px;
+    /* z-index: 1;
+    height: 400px; */
 }
 
-.col-2 img {
-    /* margin-top: .5rem; */
+/* .col-2 img {
+    margin-top: .5rem;
     position: absolute;
     z-index: 2;
     top : 180px;
-}
+} */
 
 .hero-title {
     color: var(--secondaryColor);

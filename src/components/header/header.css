@@ -1,60 +1,95 @@
 /* Mobile-First */
+.mobile-menu {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    right: 1rem;
+    top: 3.5rem ;
+    padding: 0 1rem 1rem 1rem;
+    background-color: rgba(243, 243, 243, .98);
+    opacity: 0.65;
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: self-start;
+}
+
+.mobile-menu li {
+    padding: 2rem 1rem 0.5rem 1rem;
+}
+
+.mobile-menu li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* outline: 2px solid red; */
 }
 
-.logo, .burger-menu {
+.logo {
     margin: 1rem 2rem;
 }
 
-.navbar {
+.navbar  {
     display: none;
 }
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar ul li {
-    padding: 1rem 1rem .25rem 1rem;
-}
-
-.navbar ul li a {
-    font-size: 1.25 rem;
-    font-weight: 900;
-    color: #000;
-    text-decoration: none;
-}
-
-/* Align the list to the right */
-.navbar ul {
-    justify-content: flex-end;
-}
-
-/* Desktop */
-@media screen and (width >= 1000px) {
-    .header-container {
-        justify-content: space-around;
-        align-items: center;
+/* TABLET */
+@media screen and (width >= 800px) {
+    .mobile-menu {
+        height: 45vh;
+        width: 40vw;
     }
-    .burger-menu {
+}
+
+/* DESKTOP */
+@media screen and (width >= 1000px) {
+    .mobile-container {
         display: none;
     }
 
-    .navbar  {
-        display: block;
-    }
-
-    .navbar ul {
+    .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
-    .navbar ul li:hover {
+    .navbar li {
+        padding: 2rem 1rem 0.25rem 1rem;
+    }
+
+    .navbar li a {
+        font-size: 1.05rem;
+        text-decoration: none;
+        color: #000;
+        font-weight: 900;
+    }
+
+    .navbar li:hover {
         border-bottom: 2px solid #000;
     }
-  }
+
+    .navbar .menu-icon {
+        margin: auto .35rem auto auto;
+    }
+
+}
