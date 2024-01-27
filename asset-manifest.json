@@ -1,15 +1,25 @@
 {
   "files": {
-    "main.css": "/little-lemon-app/static/css/main.3048902d.css",
-    "main.js": "/little-lemon-app/static/js/main.ece1550d.js",
+    "main.css": "/little-lemon-app/static/css/main.25faab72.css",
+    "main.js": "/little-lemon-app/static/js/main.0ba9d144.js",
     "static/js/787.7c4105ee.chunk.js": "/little-lemon-app/static/js/787.7c4105ee.chunk.js",
+    "static/media/restaurant-chef-B.jpg": "/little-lemon-app/static/media/restaurant-chef-B.4b4c2d26b514db32e8fc.jpg",
+    "static/media/greek-salad.jpg": "/little-lemon-app/static/media/greek-salad.bed423a1fab5b210e347.jpg",
+    "static/media/restaurant-food.jpg": "/little-lemon-app/static/media/restaurant-food.e8abf5b772b6817189aa.jpg",
+    "static/media/dining-in.png": "/little-lemon-app/static/media/dining-in.4ac074f666b1e268ce04.png",
+    "static/media/storefront.png": "/little-lemon-app/static/media/storefront.d6fc0cc7b41ca48a8869.png",
+    "static/media/Logo.svg": "/little-lemon-app/static/media/Logo.f72c913c48c5334f78f2c336ec36f22b.svg",
+    "static/media/user-2.png": "/little-lemon-app/static/media/user-2.b7ec487fd94359804ecd.png",
+    "static/media/user-1.png": "/little-lemon-app/static/media/user-1.ba66b32c42f227b1a7eb.png",
+    "static/media/user-4.png": "/little-lemon-app/static/media/user-4.72c3d079d139ed84c6dd.png",
+    "static/media/user-3.png": "/little-lemon-app/static/media/user-3.2c995e0bbb427ad1b8ef.png",
     "index.html": "/little-lemon-app/index.html",
-    "main.3048902d.css.map": "/little-lemon-app/static/css/main.3048902d.css.map",
-    "main.ece1550d.js.map": "/little-lemon-app/static/js/main.ece1550d.js.map",
+    "main.25faab72.css.map": "/little-lemon-app/static/css/main.25faab72.css.map",
+    "main.0ba9d144.js.map": "/little-lemon-app/static/js/main.0ba9d144.js.map",
     "787.7c4105ee.chunk.js.map": "/little-lemon-app/static/js/787.7c4105ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3048902d.css",
-    "static/js/main.ece1550d.js"
+    "static/css/main.25faab72.css",
+    "static/js/main.0ba9d144.js"
   ]
 }
